@@ -1,0 +1,68 @@
+//compass function
+@mixin button-green($font-size,$padding,$margin) {
+  @include helvetica;
+  text-decoration: none;
+  text-transform:uppercase;
+  border: 1px solid #383838;
+  color: #fff;
+  font-size: $font-size;
+  font-style: normal;
+  font-weight: bold;
+  margin: $margin;
+  padding: $padding;
+  text-shadow: 1px 1px 1px #000;
+  @include border-radius(4px);
+  background: #00763b;
+  @include background-image(linear-gradient(top, #00a754, #00763b));
+  @include filter-gradient(#00a754, #00763b);
+  &:hover {
+    cursor: pointer;
+    @include background-image(linear-gradient(top, #008845, #006c37));
+    @include filter-gradient(#008845, #006c37);
+  }
+}
+
+//precompiled
+a {
+  @include button-green(9px,3px 4px,0);
+}
+
+//compiled output
+a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #383838;
+  color: #FFF;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0;
+  padding: 3px 4px;
+  text-shadow: 1px 1px 1px #000;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  background: #00763b;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a754), color-stop(100%, #00763b));
+  background-image: -webkit-linear-gradient(top, #00a754, #00763b);
+  background-image: -moz-linear-gradient(top, #00a754, #00763b);
+  background-image: -o-linear-gradient(top, #00a754, #00763b);
+  background-image: linear-gradient(top, #00a754, #00763b);
+  *zoom: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00A754', endColorstr='#FF00763B')";
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00A754', endColorstr='#FF00763B'); }
+  #right_wrapper #results .stop .leg-reroute a:hover {
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #008845), color-stop(100%, #006c37));
+    background-image: -webkit-linear-gradient(top, #008845, #006c37);
+    background-image: -moz-linear-gradient(top, #008845, #006c37);
+    background-image: -o-linear-gradient(top, #008845, #006c37);
+    background-image: linear-gradient(top, #008845, #006c37);
+    *zoom: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF008845', endColorstr='#FF006C37')";
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF008845', endColorstr='#FF006C37'); 
+}
