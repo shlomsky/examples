@@ -55,7 +55,7 @@ a {
   *zoom: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00A754', endColorstr='#FF00763B')";
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00A754', endColorstr='#FF00763B'); }
-  #right_wrapper #results .stop .leg-reroute a:hover {
+  a:hover {
     cursor: pointer;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #008845), color-stop(100%, #006c37));
     background-image: -webkit-linear-gradient(top, #008845, #006c37);
