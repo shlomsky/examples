@@ -12,9 +12,6 @@ function sliderOption (thisSlider,option,min,max,step,description) {
       if (current == 0){
     	  var current = 10;
       }
-      if (current == 1) {
-        var description = "Vehicle";
-      } 
     }
     $(this).slider({
 			range: "min",
